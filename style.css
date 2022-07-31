@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#4671EA, #AC34E7);
+}
+
+.container{
+    width: 630px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 25px 30px;
+}
+.container h2{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #4671EA;
+}
+
+.container textarea{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    /* max-width: 660px; */
+    margin-top: 20px;
+    max-height: 660px;
+}
+
+textarea:is(:focus,:valid){
+    border-color: #4671EA;
+    border-width: 2px;
+    padding: 14px;
+}
+textarea::-webkit-scrollbar{
+    width: 0;
+}
